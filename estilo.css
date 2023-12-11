@@ -1,0 +1,495 @@
+/* CSS Header*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+
+}
+
+html,body{
+    font-size: 0.9vw;
+    
+    
+}
+
+header{
+    width: 100%;
+    height: 15vh;    
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+}
+
+a,button {
+    all: unset;
+    cursor: pointer;
+
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    
+}
+
+
+main{
+    flex: 1; 
+    padding-bottom: 50px;
+
+
+}
+
+
+#logo{
+    max-height: 170%;
+  
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-image: url("imagens/Background.jpg");
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+
+li a{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: 0.5s;
+    color:black;
+   
+}
+
+li a:hover {
+    color: black;
+    border-bottom: 8px black solid;
+    transition: 0.5s;
+    padding: 38px 15px;
+}
+
+.hide {
+    top: 70px;
+
+}
+
+.btn .log-in {
+    font-weight: 500; 
+    padding: 12px 22px; 
+    background-color: transparent; 
+    color: black;
+    border-radius: 10px; 
+    border: 2.5px solid black; 
+    transition: 0.2s;
+    
+}
+
+.btn .log-in:hover { 
+    border: 2.5px solid #0aa5ff; 
+    background-color: #0aa5ff; 
+    color: white;
+    
+}
+
+.menu-btn { 
+    font-size: 32px; 
+    color: white; 
+    display: none;
+    cursor: pointer;
+    
+}
+
+*,*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+
+/* CSS Main*/
+:root {
+    --primary-color: #635bff;
+    --secondary: #0a2540;
+
+}
+
+body {
+    width: 100%; 
+    padding-top: 18px;
+    font-family: "sohne-var", "Helvetica Neue","Arial", sans-serif;
+
+}
+
+*{
+    box-sizing: border-box; 
+    margin: 0px; 
+    padding: 0px;
+    
+}
+
+.container {
+    display: flex; 
+    justify-content:center; 
+    flex-wrap: wrap; 
+    margin: 0 25px; 
+    max-width: 100%;
+    gap:50px; 
+    
+}
+
+.content {
+    padding: 24px; 
+    flex-grow: 1;
+    height: 260px;
+
+}
+
+.card { 
+    display: flex;
+    flex-direction: column; 
+    border-bottom-left-radius: 4px; 
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.1), 8px 30px 45px -30px rgba(50,50,93,0.25);
+    background-color:white;
+    cursor: pointer; 
+    width: 100%; 
+    flex-basis: 330px; 
+    padding: 4px; 
+    min-height: 500px; 
+    transition: all 0.25 ease-in-out;
+
+}
+
+.content > h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 1.384615385;
+
+}
+
+.content > p{
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 500;
+
+}
+
+.content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+.content a:hover { 
+    color: #0a2540;
+
+}
+
+.card-background {
+    height: 200px;
+    transition: all 0.25 ease-in-out;
+    
+}
+    
+.card:hover .card-background {
+     height: 160px;
+        
+}
+
+.card-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card:hover .action-bottom-bar a { 
+    opacity: 1;
+
+}
+
+.action-bottom-bar {
+    display: flex;
+    font-size: 18px; 
+    height: 42px; 
+    width: 100%;
+
+}
+
+.action-bottom-bar a {
+    display: flex;
+    gap: 6px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 800;
+    opacity: 0;
+    padding: 0 24px; 
+    transition: all 0.25 ease-in-out;
+
+}
+
+.action-bottom-bar a:hover { 
+    color: var(--secondary);
+
+}
+
+.action-bottom-bar a:hover svg { 
+    color: var(--secondary);
+
+}
+
+.action-bottom-bar a svg { 
+    transition: all 0.25 ease-in-out;
+
+}
+
+.arrow { 
+    display: none;
+
+}
+
+.action-bottom-bar a:hover .arrow { 
+    display: block;
+
+}
+
+.action-bottom-bar a:hover .chevron { 
+    display: none; 
+
+}
+
+
+/* CSS Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+:root {
+    --gray: #595C61;
+
+}
+
+footer {
+    padding: 16px;
+    background-image: url("imagens/Background.jpg");
+    color: black;
+    min-width: 300px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+    
+}
+
+.footer-wrapper {
+    display: flex;
+    background-image: url("imagens/Background.jpg");
+    flex-direction: column;
+    width: 96vw;
+   
+}
+
+.logo {
+     width: 70%; 
+
+}
+
+.social-links { 
+    display: flex; 
+    flex-direction: row; 
+    gap: 12px;
+    
+}
+
+.social-links img { 
+    width: 24px; 
+    height: 24px; 
+    transition: all 0.2s ease-in-out; 
+
+}
+
+.social-links img:hover { 
+    transform: scale(1.1); 
+
+}
+
+.footer-top {
+    display: flex; 
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4px 0px;
+    justify-content: space-between;
+    height: 9vh;
+    
+}
+
+.footer-bottom { 
+    text-align: center; 
+    border-top: 1px solid var(--gray); 
+    margin-top: 48px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    gap: 8px; 
+    padding: 16px 0px;
+    flex-wrap: wrap;
+    height: 10vh;
+
+}
+
+.footer-bottom-links { 
+    margin-left: auto; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+
+
+.footer-bottom-links > a { 
+    font-size: 16px;
+    color: black; 
+    text-decoration: none;
+
+}
+
+.footer-bottom-links a:hover { 
+    text-decoration: underline; 
+
+}
+
+.footer-bottom > small { 
+     font-size: 16px; 
+     margin:16px;
+     margin: 0 4px;
+     
+} 
+
+@media (max-width: 858px){
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        padding: 10px;
+        margin-right: -10px;
+
+    }
+
+    .lines {
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 35px;
+
+    }
+
+    .lines-rotate {
+        background-image: url("imagens/Background.jpg");
+        border-radius: 5px;
+
+    }
+
+    nav {
+        padding: 15px 20px;
+
+    }
+
+    ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -400px;
+        right: 0;
+        background-image: url("imagens/Background.jpg");
+        padding: 35px 0;
+        border-radius: 20px 20px; 
+        box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.363);
+
+    }
+
+    li a {
+        color: rgba(12, 11, 11, 0.836); 
+        font-size: 3em;
+
+    }
+    
+    li {
+        text-align: center;
+        width: 90vw;
+
+    }
+
+    li a:hover {
+        font-weight: bold;
+        color: #191e24;
+        border: none;
+        letter-spacing: 3px;
+
+    }
+
+    .btn .log-in {
+        font-weight: 500; 
+        padding: 8px 20px; 
+        background-color: transparent; 
+        color: black;
+        border-radius: 5px; 
+        border: 2.5px solid black; 
+        transition: 0.2s;
+        font-size: 3rem;
+        
+    }
+    .btn .log-in:hover { 
+        background-color: #0aa5ff; 
+        color: white;
+        
+    }
+
+    #logo{
+        max-height: 100%;
+      
+    }
+    .footer-bottom-links { 
+        margin: 0 auto;
+        
+    }
+
+    .social-links { 
+        flex-direction: row; 
+        
+    }
+}
+

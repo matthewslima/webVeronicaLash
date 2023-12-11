@@ -316,7 +316,7 @@ footer {
 }
 
 .logo {
-     width: 70%; 
+     width: 50%; 
 
 }
 
@@ -491,5 +491,12 @@ footer {
         flex-direction: row; 
         
     }
+    .footer-top{
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+  
 }
 
